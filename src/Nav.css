@@ -1,0 +1,53 @@
+.navBar {
+    /*background-color: #0F1745;*/
+    background-color: #111111;
+    padding: 15px;
+    height: 100%;
+    max-width: 250px;
+    width: 25%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.navButton {
+    font-family: inherit;
+    justify-content: center;
+    text-align: center;
+    padding: 12px 8px 12px 0;
+    display: block;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.25s ease;
+    color: inherit;
+}
+
+.navButton:hover {
+    color: #FF9900;
+}
+
+.profileImage {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid #343a40;
+    justify-content: center;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.profileText {
+    font-family: inherit;
+    font-size: 1.3125rem;
+    margin-bottom: 5px;
+    color: inherit;
+}
+
+.buttonContainer {
+    padding-top: 50%;
+}

@@ -1,0 +1,14 @@
+.content-box {
+    text-align: center;
+    padding-top: 5%;
+    width: 70%;
+    margin: auto;
+}
+
+.header-underline {
+    text-align: inherit;
+    margin: inherit;
+    border: 2px solid limegreen;
+    border-radius: 1px;
+    width: 15%;
+}
