@@ -16,3 +16,17 @@
     font-family: inherit;
     color: inherit;
 }
+
+.scroll-icon {
+    padding-top: 50vh;
+}
+
+.scroll-link {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.25s ease;
+}
+
+.scroll-link:hover {
+    color: var(--sec-color);
+}

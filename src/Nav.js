@@ -3,14 +3,14 @@ import "./Nav.css";
 import Common from "./Common.js";
 import profile from "./assets/pic.webp";
 
-function Nav() {
+export default function Nav() {
     return (
         <div className="navBar light-text main-font">
             <ProfilePicture name={Common.nameStr} img={profile} />
             <div className="buttonContainer">
                 <NavButton name="Home" link="#home" />
                 <NavButton name="About" link="#about" />
-                <NavButton name="Resume" link="#resume" />
+                <NavButton name="Experience" link="#experience" />
                 <NavButton name="Contact" link="#contact" />
             </div>
         </div>
@@ -31,5 +31,3 @@ function ProfilePicture(props) {
         </>
     );
 }
-
-export default Nav;

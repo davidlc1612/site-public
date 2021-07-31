@@ -1,14 +1,33 @@
-.content-box {
+.page-box {
     text-align: center;
     padding-top: 5%;
-    width: 70%;
+    padding-bottom: 5%;
+    width: 75%;
     margin: auto;
 }
 
 .header-underline {
-    text-align: inherit;
     margin: inherit;
-    border: 2px solid limegreen;
+    border: 2px solid var(--sec-color);
     border-radius: 1px;
-    width: 15%;
+    width: 50%;
+}
+
+.page-contents {
+    padding-top: 5%;
+}
+
+.text-box {
+    text-align: start;
+}
+
+.info-box {
+    text-align: start;
+}
+
+.center-btn {
+    background-color: var(--sec-color) !important;
+    color: white !important;
+    width: 20% !important;
+    margin: auto;
 }

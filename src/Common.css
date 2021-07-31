@@ -1,5 +1,23 @@
+:root {
+    --sec-color: #20C997;
+    --dark-bg: #111111;
+}
+
 html {
     scroll-behavior: smooth;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.header-box {
+    display: inline-block;
+    margin: auto;
+}
+
+.main {
+    margin-left: min(250px, 25%);
 }
 
 .light-text {
@@ -12,6 +30,10 @@ html {
 
 .dark-text2 {
     color: #212529;
+}
+
+.sec-text {
+    color: var(--sec-color);
 }
 
 .light-bg {
