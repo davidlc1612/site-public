@@ -1,6 +1,9 @@
 :root {
     --sec-color: #20C997;
-    --dark-bg: #111111;
+    --nav-color: #111111;
+    --light-color: #DEE3E4;
+    --dark-color1: #252B33;
+    --dark-color2: #212529;
 }
 
 html {
@@ -11,9 +14,32 @@ p {
     font-size: 1rem;
 }
 
+.new-page {
+    /* Dummy class used for smart navigation menu */
+}
+
 .header-box {
     display: inline-block;
     margin: auto;
+}
+
+.header-underline {
+    margin: inherit;
+    border: 2px solid var(--sec-color);
+    border-radius: 1px;
+    width: 50%;
+}
+
+.page-box {
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 75%;
+    margin: auto;
+}
+
+.page-contents {
+    padding-top: 5%;
 }
 
 .main {
@@ -21,15 +47,15 @@ p {
 }
 
 .light-text {
-    color: #DEE3E4;
+    color: var(--light-color);
 }
 
 .dark-text1 {
-    color: #252B33;
+    color: var(--dark-color1);
 }
 
 .dark-text2 {
-    color: #212529;
+    color: var(--dark-color2);
 }
 
 .sec-text {
@@ -37,17 +63,23 @@ p {
 }
 
 .light-bg {
-    background-color: #DEE3E4;
+    background-color: var(--light-color);
 }
 
 .dark-bg1 {
-    background-color: #252B33;
+    background-color: var(--dark-color1);
 }
 
 .dark-bg2 {
-    background-color: #212529;
+    background-color: var(--dark-color2);
 }
 
 .main-font {
     font-family: "Poppins", sans-serif;
+}
+
+.center-btn {
+    background-color: var(--sec-color) !important;
+    color: white !important;
+    border-color: var(--sec-color) !important;
 }

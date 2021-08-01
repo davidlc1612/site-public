@@ -5,14 +5,14 @@ import {Button} from "react-bootstrap";
 
 export default function About() {
     return (
-        <div id="about" className="bg-white">
+        <div id="about" className="bg-white new-page">
             <div className="page-box">
                 <Common.Header text="About Me" />
-                <div className="page-contents row">
-                    <div className="text-box col-8">
-                        <h2><span className="sec-text">{Common.nameStr},</span> <span className="dark-text2">Software Engineer</span></h2>
+                <div className="page-contents row text-start">
+                    <div className="col-8">
+                        <h2 className="fw-bold"><span className="sec-text">{Common.nameStr},</span> <span className="dark-text2">Software Engineer</span></h2>
                         <p className="dark-text1">
-                            I am a fourth year, first generation, undergraduate studying Computer Science with a specialization in Information.
+                            I'm a fourth year, first generation, undergraduate studying Computer Science with a specialization in Information.
                             <br />
                             <br />
                             Out of the entire computer science field, I am most passionate about programming.
@@ -27,8 +27,8 @@ export default function About() {
                             <div className="col"><span className="fw-bold">From:</span> Alameda, California</div>
                         </div>
                     </div>
-                    <div className="info-box col dark-text2">
-                        <p className="dark-text1">Here are some skills that I'm familiar with!</p>
+                    <div className="col dark-text2">
+                        <p className="dark-text1">Here are some skills I'm familiar with!</p>
                         <div className="row">
                             <div className="col">
                                 <h5 className="fw-bold">Languages:</h5>
@@ -55,8 +55,8 @@ export default function About() {
                                 </ul>
                             </div>
                         </div>
-                        <div className="row">
-                            <Button href="#" variant="light" className="center-btn">Resume</Button>
+                        <div className="row btn-box1">
+                            <Button href="#" variant="light" className="center-btn rounded-pill">Resume <i className="fa-solid fa-file-arrow-down" /></Button>
                         </div>
                     </div>
                 </div>

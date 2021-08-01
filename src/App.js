@@ -4,6 +4,7 @@ import Nav from "./Nav.js";
 import Home from "./Home.js";
 import About from "./About.js";
 import Experience from "./Experience.js";
+import Contact from "./Contact.js";
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
             <Home />
             <About />
             <Experience />
+            <Contact />
         </div>
         </>
     );

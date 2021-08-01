@@ -1,33 +1,5 @@
-.page-box {
+.btn-box1 {
+    display: inline-block !important;
+    padding-left: 40%;
     text-align: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    width: 75%;
-    margin: auto;
-}
-
-.header-underline {
-    margin: inherit;
-    border: 2px solid var(--sec-color);
-    border-radius: 1px;
-    width: 50%;
-}
-
-.page-contents {
-    padding-top: 5%;
-}
-
-.text-box {
-    text-align: start;
-}
-
-.info-box {
-    text-align: start;
-}
-
-.center-btn {
-    background-color: var(--sec-color) !important;
-    color: white !important;
-    width: 20% !important;
-    margin: auto;
 }

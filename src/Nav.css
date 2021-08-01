@@ -1,6 +1,5 @@
 .navBar {
-    /*background-color: #0F1745;*/
-    background-color: var(--dark-bg);
+    background-color: var(--nav-color);
     padding: 15px;
     height: 100%;
     max-width: 250px;
@@ -26,8 +25,12 @@
 }
 
 .navButton:hover {
-    /*color: #FF9900;*/
-    color: var(--sec-color);
+    /*color: var(--sec-color);*/
+    color: inherit;
+}
+
+.active {
+    color: var(--sec-color) !important;
 }
 
 .profileImage {
