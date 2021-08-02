@@ -8,6 +8,8 @@
             ),
             url(./assets/background.jpg)
             no-repeat fixed center;
+    z-index: -1;
+    position: relative;
 }
 
 .main-text {
@@ -28,4 +30,14 @@
 
 .scroll-link:hover {
     color: var(--sec-color);
+}
+
+.particle {
+    position: fixed !important;
+    height: 100%;
+    width: 100%;
+}
+
+.big-header {
+    font-size: 5rem;
 }

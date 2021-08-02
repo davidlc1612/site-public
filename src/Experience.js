@@ -6,6 +6,7 @@ import ckiLogo from "./assets/cki.jpg";
 import accLogo from "./assets/acc.png";
 import uciLogo from "./assets/uci.png";
 import {Button} from "react-bootstrap";
+import resume from "./assets/resume.pdf";
 
 export default function Experience() {
     return (
@@ -15,14 +16,14 @@ export default function Experience() {
               <div className="page-contents row text-start">
                   <div className="col exp-col vr-div auto">
                       <h4 className="fw-bold text-center">Employment</h4>
-                      <Card
+                      <ExperienceCard
                           img={amexLogo}
                           title="Software Engineering Intern"
                           info="American Express"
                           term="Jun 2021 - Aug 2021"
                           body="Enterprise Communication Platform"
                       />
-                      <Card
+                      <ExperienceCard
                           img={ckiLogo}
                           title="UC Irvine Circle K"
                           info="Technology Intern"
@@ -33,7 +34,7 @@ export default function Experience() {
                               "Participated in quality assurance efforts, evaluating user experiences.",
                           ]}
                       />
-                      <Card
+                      <ExperienceCard
                           img={accLogo}
                           title="American Campus Communities"
                           info="Night Desk Assistant"
@@ -48,7 +49,7 @@ export default function Experience() {
                   </div>
                   <div className="col exp-col">
                       <h4 className="fw-bold text-center">Education</h4>
-                      <Card
+                      <ExperienceCard
                           img={uciLogo}
                           title="University of California, Irvine"
                           info="Bachelor of Science, Computer Science"
@@ -61,15 +62,15 @@ export default function Experience() {
                       />
                       <div className="hr-div" />
                       <h4 className="fw-bold text-center">Projects</h4>
-                      <Card
+                      <ExperienceCard
                           title="FabFlix"
                           body="imdb but better"
                       />
-                      <Card
+                      <ExperienceCard
                           title="Chat Server"
                           body="concurrency"
                       />
-                      <Card
+                      <ExperienceCard
                           title="Search Engine"
                           body={[
                               "Cooperatively built a search engine using Spacetime framework for Python, handling tens of thousands of documents.",
@@ -77,7 +78,7 @@ export default function Experience() {
                               "Optimized internal code, handling most queries in under 300 milliseconds.",
                           ]}
                       />
-                      <Card
+                      <ExperienceCard
                           title="Message Board Android Application"
                           body={[
                               "Created a forum-like Android application using Java.",
@@ -88,14 +89,14 @@ export default function Experience() {
                   </div>
               </div>
               <div className="btn-box2">
-                <Button href="#" variant="light" className="center-btn rounded-pill">Resume <i className="fa-solid fa-file-arrow-down" /></Button>
+                <Button rel="noreferrer" target="_blank" href={resume} variant="light" className="center-btn rounded-pill">Resume <i className="fa-solid fa-file-arrow-down" /></Button>
               </div>
           </div>
       </div>
     );
 }
 
-function Card(props) {
+function ExperienceCard(props) {
     let info = "";
     if (props.info != null) {
         info = props.info;
@@ -112,7 +113,7 @@ function Card(props) {
     }
     if (props.img != null) {
         return (
-            <div className="card mb-3 card-div">
+            <div className="card mb-3 exp-card">
 
                 {/* Shows logos on bigger screens */}
                 <div className="row g-0 big-screens">
@@ -140,7 +141,7 @@ function Card(props) {
         );
     }
     return (
-        <div className="card mb-3 card-div">
+        <div className="card mb-3 exp-card">
             <div className="row g-0">
                 <div className="col">
                     <div className="card-body">

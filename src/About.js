@@ -2,6 +2,7 @@ import "./Common.css";
 import "./About.css";
 import Common from "./Common.js";
 import {Button} from "react-bootstrap";
+import resume from "./assets/resume.pdf";
 
 export default function About() {
     return (
@@ -48,7 +49,7 @@ export default function About() {
                                 <ul>
                                     <li>Android</li>
                                     <li>Linux</li>
-                                    <li>React</li>
+                                    <li>React.js</li>
                                     <li>RxJava</li>
                                     <li>Vert.x</li>
                                     <li>Excel</li>
@@ -56,7 +57,7 @@ export default function About() {
                             </div>
                         </div>
                         <div className="row btn-box1">
-                            <Button href="#" variant="light" className="center-btn rounded-pill">Resume <i className="fa-solid fa-file-arrow-down" /></Button>
+                            <Button rel="noreferrer" target="_blank" href={resume} variant="light" className="center-btn rounded-pill">Resume <i className="fa-solid fa-file-arrow-down" /></Button>
                         </div>
                     </div>
                 </div>

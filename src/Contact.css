@@ -1,0 +1,18 @@
+.contact-img {
+    padding-top: 6%;
+}
+
+.contact-card {
+    border-color: var(--dark-color2) !important;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.25s ease;
+}
+
+.contact-link:hover {
+    color: white;
+    background-color: var(--sec-color);
+}

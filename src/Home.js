@@ -3,21 +3,23 @@ import "./Home.css";
 import Common from "./Common.js";
 import Typewriter from "typewriter-effect";
 import Particles from "react-particles-js";
-
+//change so name is big in front always
+// welcome text typewriter
 export default function Home() {
+    const nameArray = Common.nameStr.split(" ");
     return (
         <div id="home" className="screen-bg main-font light-text new-page">
-            {/*<ParticlesWrapper/>*/}
+            <ParticlesWrapper/>
             <div className="main-text">
-                <p className="fs-3">Hello!</p>
-                <h1><Typewriter
+                <h1 className="big-header"><span className="sec-text">{nameArray[0]}</span> {nameArray[1]}</h1>
+                <p className="fs-3"><Typewriter
                     options={{
-                        strings: ["My name is " + Common.nameStr + ".", "Welcome to my website."],
+                        strings: ["Welcome to my website.", "I'm happy to connect!"],
                         loop: true,
                         autoStart: true,
                         delay: 75,
                     }}
-                /></h1>
+                /></p>
             </div>
             <div className="scroll-icon">
                 <a href="#about" className="scroll-link"><i className="fa-solid fa-chevrons-down fa-lg"/></a>
@@ -28,7 +30,7 @@ export default function Home() {
 
 function ParticlesWrapper() {
     return (
-        <Particles
+        <Particles className="particle"
             params={{
                 "particles": {
                     "number": {

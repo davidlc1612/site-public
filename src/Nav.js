@@ -37,8 +37,9 @@ function NavButton(props) {
 function ProfilePicture(props) {
     return (
         <>
-        <img src={props.img} className="profileImage" alt=""/>
+        <img src={props.img} className="profileImage" alt={Common.nameStr}/>
         <p className="profileText">{props.name}</p>
+        <p className="text-secondary">Open to opportunities</p>
         </>
     );
 }
@@ -47,8 +48,8 @@ function ProfilePicture(props) {
 $(window).on("scroll", function() {
     $(".new-page").each(function() {
         if (this != null) {
-            console.log("lol");
-            if ($(window).scrollTop() >= $(this).offset().top - 5) {
+            // Experiment values, used to be -5
+            if ($(window).scrollTop() >= $(this).offset().top - 365) {
                 let id = $(this).attr("id");
                 $("#nav a").removeClass("active");
                 $("#nav #" + id + "-nav").addClass("active");

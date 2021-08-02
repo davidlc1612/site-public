@@ -1,6 +1,5 @@
 export default class Common {
     static nameStr = "John Doe";
-    static emailStr = "email@email.com"
 
     static filler = "\n" +
         "          The standard Lorem Ipsum passage, used since the 1500s\n" +
