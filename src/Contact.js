@@ -16,7 +16,7 @@ export default function Contact() {
                     <ContactCard
                         faNames="fa-brands fa-github"
                         details="johndoe123"
-                        link="https://github.com/davidlc1612/johndoe123/"
+                        link="https://github.com/johndoe123/"
                     />
                     <ContactCard
                         faNames="fa-regular fa-at"
@@ -39,18 +39,19 @@ export default function Contact() {
 }
 
 function ContactCard(props) {
-    let linkType = "_blank";
-    if (props.link != null && (props.link.includes("mailto:") || props.link.includes("tel:"))) {
-        linkType = "_self";
-    }
     return (
         <div className="col">
             <div className="card contact-card">
-                <a href={props.link} target={linkType} className="contact-link" rel="noreferrer">
-                    <i className={props.faNames + " fa-2x card-img-top contact-img"} />
-                    <div className="card-body">
-                        <p className="card-text">{props.details}</p>
-                    </div>
+                <a
+                    href={props.link}
+                    target={props.link != null && (props.link.includes("mailto:") || props.link.includes("tel:"))
+                        ? "_self" : "_blank"}
+                    className="contact-link"
+                    rel="noreferrer">
+                        <i className={props.faNames + " fa-2x card-img-top contact-img"} />
+                        <div className="card-body">
+                            <p className="card-text">{props.details}</p>
+                        </div>
                 </a>
             </div>
         </div>

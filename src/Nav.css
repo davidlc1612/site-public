@@ -1,30 +1,79 @@
-.navBar {
-    background-color: var(--nav-color);
-    padding: 15px;
-    height: 100%;
-    max-width: 250px;
-    width: 25%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    text-align: center;
+/* Horizontal nav for smaller screens */
+@media only screen and (max-width: 940px) {
+    .profile-box {
+        display: none;
+    }
+
+    .nav-bar {
+        background-color: var(--nav-color);
+        top: 0;
+        height: 50px;
+        width: 100%;
+        position: fixed;
+        overflow: hidden;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .nav-button {
+        font-family: inherit;
+        justify-content: center;
+        text-align: center;
+        padding: 2.5%;
+        font-size: 1rem;
+        text-decoration: none;
+        transition: color 0.25s ease;
+        color: inherit;
+    }
+
+    .button-container {
+        padding-top: 13px;
+    }
+
+    .new-page {
+        padding-top: 50px;
+        margin-top: -50px;
+        margin-bottom: 50px;
+    }
 }
 
-.navButton {
-    font-family: inherit;
-    justify-content: center;
-    text-align: center;
-    padding: 12px 8px 12px 0;
-    display: block;
-    font-size: 1rem;
-    text-decoration: none;
-    transition: color 0.25s ease;
-    color: inherit;
+/* Vertical nav for bigger screens */
+@media only screen and (min-width: 941px) {
+    .profile-box {
+        display: initial;
+    }
+
+    .nav-bar {
+        background-color: var(--nav-color);
+        padding: 15px;
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .nav-button {
+        font-family: inherit;
+        justify-content: center;
+        text-align: center;
+        padding: 12px 8px 12px 0;
+        display: block;
+        font-size: 1rem;
+        text-decoration: none;
+        transition: color 0.25s ease;
+        color: inherit;
+    }
+
+    .button-container {
+        padding-top: 30%;
+    }
 }
 
-.navButton:hover {
+.nav-button:hover {
     /*color: var(--sec-color);*/
     color: inherit;
 }
@@ -33,25 +82,21 @@
     color: var(--sec-color) !important;
 }
 
-.profileImage {
+.profile-img {
     margin-top: 25px;
     margin-bottom: 10px;
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    border: 5px solid #343a40;
+    border: 5px solid #343A40;
     justify-content: center;
     display: inline-block;
     max-width: 100%;
 }
 
-.profileText {
+.profile-text {
     font-family: inherit;
     font-size: 1.3125rem;
     margin-bottom: 5px;
     color: inherit;
-}
-
-.buttonContainer {
-    padding-top: 30%;
 }

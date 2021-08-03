@@ -1,43 +1,61 @@
-/* Shows logos on bigger screens */
+/* Hides logos on smaller screens */
 @media only screen and (max-width: 992px) {
     .big-screens {
         display: none;
-        max-height: 0;
-    }
-
-    .small-screens {
-        display: block;
     }
 }
 
-/* Hides logos on smaller screens */
+/* Shows logos on bigger screens */
 @media only screen and (min-width: 993px) {
-    .big-screens {
-        display: block;
-    }
-
     .small-screens {
         display: none;
-        max-height: 0;
+    }
+}
+
+/* One column on smaller screens */
+@media only screen and (max-width: 645px) {
+    .vr-div {
+        border-right: 2px solid var(--light-color);
+    }
+
+    .hr-div {
+        display: none;
+    }
+
+    .exp-col-big {
+        display: none;
+    }
+
+    .exp-col-small {
+        display: initial;
+    }
+}
+
+/* Two columns on bigger screens */
+@media only screen and (min-width: 646px) {
+    .vr-div {
+        border-right: 2px solid var(--dark-color2);
+    }
+
+    .hr-div {
+        display: block;
+        border-top: 2px solid var(--dark-color2);
+        padding-bottom: 2%;
+    }
+
+    .exp-col-big {
+        margin: auto;
+        display: initial;
+    }
+
+    .exp-col-small {
+        display: none;
     }
 }
 
 .exp-card {
     max-width: 540px;
     margin: inherit;
-}
-
-.vr-div {
-    border-right: 2px solid var(--dark-color2);
-}
-
-.hr-div {
-    border-top: 2px solid var(--dark-color2);
-    padding-bottom: 2%;
-}
-
-.exp-col {
-    margin: auto;
 }
 
 .info-text {

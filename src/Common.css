@@ -42,8 +42,16 @@ p {
     padding-top: 5%;
 }
 
-.main {
-    margin-left: min(250px, 25%);
+@media only screen and (max-width: 940px) {
+    .main {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (min-width: 941px) {
+    .main {
+        margin-left: 250px;
+    }
 }
 
 .light-text {

@@ -1,5 +1,58 @@
+/* Small screen about layout */
+@media only screen and (max-width: 940px) {
+    .about-big {
+        display: none;
+    }
+
+    .about-img {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .about-img-box {
+        border: 1px solid var(--dark-color2);
+        max-width: 200px;
+        margin: auto;
+    }
+
+    .intro {
+        text-align: center;
+        padding-top: 5px;
+    }
+}
+
+/* Big screen about layout */
+@media only screen and (min-width: 941px) {
+    .about-small {
+        display: none;
+    }
+
+    .about-img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .about-img-box {
+        border: 1px solid var(--dark-color2);
+        max-width: 400px;
+        display: inline-block;
+        margin-bottom: auto;
+        margin-top: 10px;
+    }
+}
+
 .btn-box1 {
-    display: inline-block !important;
-    padding-left: 40%;
     text-align: center;
+    padding-top: 35px;
+}
+
+.skill-card {
+    color: var(--dark-color2);
+    border-color: var(--dark-color2);
+    transition: color 0.25s ease;
+}
+
+.skill-card:hover {
+    color: white;
+    background-color: var(--sec-color);
 }
