@@ -2,6 +2,7 @@
 @media only screen and (max-width: 940px) {
     .profile-box {
         display: none;
+        visibility: hidden;
     }
 
     .nav-bar {
@@ -70,6 +71,10 @@
 
     .button-container {
         padding-top: 30%;
+    }
+
+    .new-page {
+        /* Dummy class used for smart navigation menu */
     }
 }
 

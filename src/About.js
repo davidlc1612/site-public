@@ -80,7 +80,7 @@ function Content() {
             />
             <SkillCard
                 faNames="fa-solid fa-database"
-                desc="NoSQL/SQL"
+                desc="SQL/NoSQL"
             />
             <SkillCard
                 faNames="fa-brands fa-android"

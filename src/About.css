@@ -2,6 +2,7 @@
 @media only screen and (max-width: 940px) {
     .about-big {
         display: none;
+        visibility: hidden;
     }
 
     .about-img {
@@ -25,6 +26,7 @@
 @media only screen and (min-width: 941px) {
     .about-small {
         display: none;
+        visibility: hidden;
     }
 
     .about-img {

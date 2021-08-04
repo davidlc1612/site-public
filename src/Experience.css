@@ -2,6 +2,7 @@
 @media only screen and (max-width: 992px) {
     .big-screens {
         display: none;
+        visibility: hidden;
     }
 }
 
@@ -9,6 +10,7 @@
 @media only screen and (min-width: 993px) {
     .small-screens {
         display: none;
+        visibility: hidden;
     }
 }
 
@@ -20,10 +22,12 @@
 
     .hr-div {
         display: none;
+        visibility: hidden;
     }
 
     .exp-col-big {
         display: none;
+        visibility: hidden;
     }
 
     .exp-col-small {
@@ -50,6 +54,7 @@
 
     .exp-col-small {
         display: none;
+        visibility: hidden;
     }
 }
 
