@@ -12,8 +12,8 @@ export default function Experience() {
       <div id="experience" className="light-bg new-page">
           <div className="page-box">
               <Common.Header text="Experience" />
-              <div className="page-contents row text-start">
-                  <div className="col exp-col vr-div auto">
+              <div className="page-contents row text-start exp-contents">
+                  <div className="col vr-div auto">
                       <FirstColumn />
                   </div>
                   {/* Two columns on bigger screens */}
@@ -44,7 +44,10 @@ function FirstColumn() {
             title="Software Engineering Intern"
             info="American Express"
             term="Jun 2021 - Aug 2021"
-            body="Enterprise Communication Platform"
+            body={[
+                "Developed backend microservices for the Enterprise Communication Platform with RxJava, Vert.x, Couchbase, and JSON Web Tokens.",
+                "Conducted tests and optimizations of RESTful API with Postman.",
+            ]}
         />
         <ExperienceCard
             img={ckiLogo}
@@ -83,15 +86,18 @@ function SecondColumn() {
             body={[
                 "First generation, fourth year undergraduate with a GPA of 3.76.",
                 "Dean's Honor List: 8 quarters.",
-                "Courses: Algorithms, Data Management, Data Structures, Human Computer Interaction, Information Retrieval, System Design.",
+                "Courses: Algorithms, Artificial Intelligence, Data Management, Data Structures, Information Retrieval, Machine Learning & Data Mining, System Design.",
             ]}
         />
         <div className="hr-div" />
         <h4 className="fw-bold text-center">Projects</h4>
         <ExperienceCard
             title="FabFlix"
-            info="Java, MySQL, JavaScript, Tomcat, JMeter, AWS, GCP"
-            body="."
+            info="Java, MySQL, JavaScript, Tomcat"
+            body={[
+                "Collaboratively built a full stack microservices platform, simulating film e-commerce.",
+                "Deployed on AWS/GCP with scaling; performance tuned with JMeter.",
+            ]}
         />
         <ExperienceCard
             title="Chat Server"
@@ -100,10 +106,10 @@ function SecondColumn() {
         />
         <ExperienceCard
             title="Search Engine"
-            info="Python"
+            info="Python, Spacetime Framework"
             body={[
                 "Cooperatively built a search engine, handling tens of thousands of documents.",
-                "Developed index and search functions, implementing features to refine and improve results.",
+                "Developed index and search functions, refining and improving results.",
                 "Optimized internal code, handling most queries in under 300 milliseconds.",
             ]}
         />
@@ -111,7 +117,7 @@ function SecondColumn() {
             title="Message Board Android Application"
             info="Java, Google Firebase (NoSQL)"
             body={[
-                "Forum-like Android application with up-voting, sorting, replying, deleting, and more.",
+                "Forum-like application with up-voting, sorting, replying, deleting, and more.",
                 "Data updated in real time.",
             ]}
         />
