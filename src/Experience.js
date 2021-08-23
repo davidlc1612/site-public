@@ -45,7 +45,8 @@ function FirstColumn() {
             info="American Express"
             term="Jun 2021 - Aug 2021"
             body={[
-                "Developed backend microservices for the Enterprise Communication Platform with RxJava, Vert.x, Couchbase, and JSON Web Tokens.",
+                "Researched and developed for a Proof of Concept on the Enterprise Communication Platform, potentially interacting with tens of millions of customers.",
+                "Engineered backend microservices with RxJava, Vert.x, and Couchbase.",
                 "Conducted tests and optimizations of RESTful API with Postman.",
             ]}
         />
@@ -80,7 +81,7 @@ function SecondColumn() {
         <h4 className="fw-bold text-center">Education</h4>
         <ExperienceCard
             img={uciLogo}
-            title="BS, Computer Science"
+            title="Bachelor of Science, Computer Science"
             info="University of California, Irvine"
             term="Aug 2018 - Jun 2022"
             body={[
@@ -96,13 +97,9 @@ function SecondColumn() {
             info="Java, MySQL, JavaScript, Tomcat"
             body={[
                 "Collaboratively built a full stack microservices platform, simulating film e-commerce.",
-                "Deployed on AWS/GCP with scaling; performance tuned with JMeter.",
+                "Deployed on Amazon Web Services and Google Cloud Platform with scaling.",
+                "Performance tuned with JMeter.",
             ]}
-        />
-        <ExperienceCard
-            title="Chat Server"
-            info="C"
-            body="."
         />
         <ExperienceCard
             title="Search Engine"
@@ -144,16 +141,16 @@ function ExperienceCard(props) {
         return (
             <div className="card mb-3 exp-card">
 
-                {/* Shows logos on bigger screens */}
                 <div className="row g-0 big-screens">
-                    <div className="col-md-8">
+                    {/*<div className="col-md-8">*/}
+                    <div>
                         <div className="card-body big-screens">
                             <Body title={props.title} info={info} term={props.term} items={items}/>
                         </div>
                     </div>
-                    <div className="col-md-4">
-                        <img src={props.img} className="img-fluid rounded-start big-screens" alt={props.title + " logo"}/>
-                    </div>
+                    {/*<div className="col-md-4">*/}
+                    {/*    <img src={props.img} className="img-fluid rounded-start big-screens" alt={props.info + " logo"}/>*/}
+                    {/*</div>*/}
                 </div>
 
                 {/* Hides logos on smaller screens */}
